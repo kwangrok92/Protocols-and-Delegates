@@ -1,11 +1,8 @@
-//
-//  main.swift
-//  Protocols and Delegates
-//
-//  Created by 김광록 on 2022/06/16.
-//
 
-import Foundation
+protocol AdvancedLifeSupport {
+    func performCPR()
+}
 
-print("Hello, World!")
-
+class EmergencyCallHandler {
+    var delgate: AdvancedLifeSupport?
+}
